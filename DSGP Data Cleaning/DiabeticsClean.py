@@ -84,6 +84,15 @@ for category in categories:
                 print(f"Error processing file {file_path}: {e}")
                 continue
 
+# After processing all files, save the combined data to an Excel file
+output_path = output_path = r'D:\IIT\2 Year\Cleaned\Structured_Diabetics_Data.xlsx'  # File path for saving the output
+
+combined_data.to_excel(output_path, index=False, sheet_name='Diabetics')
+
+print(f"Data structured and saved successfully to{output_path}")
+
+
+
 
 
 
