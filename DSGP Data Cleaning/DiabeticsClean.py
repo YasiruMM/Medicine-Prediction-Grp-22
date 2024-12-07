@@ -52,6 +52,38 @@ for category in categories:
                      print(f"Not enough columns in {file_path}. Skipping this file.")
                      continue
 
+                     # Assume the first column always contains the drug name now
+                     drug_name = data.iloc[:, 0]  # First column: Drug Name
+
+                     # Extract the dosage directly from the Drug Name using the extract_dosage function
+                     dosage = drug_name.apply(extract_dosage)
+
+                     # Extract retail, purchase prices, and sales columns
+                     R_Price = data.iloc[:, 4]  # 5th column: Retail Price
+                     P_price = data.iloc[:, 3]  # 4th column: Purchase Price
+                     sales = data.iloc[:, -1]  # Last column: Sales
+
+                     #Create a structured DataFrame with the necessary columns
+
+                     # Create a structured DataFrame with the necessary columns
+                     structured_data = pd.DataFrame({
+                         'Disease Category': 'Diabetics',
+                         'Drug Category': category,
+                         'Drug Name': drug_name,
+                         'Dosage': dosage,
+                         'Retail Price': R_Price,
+                         'Purchase Price': P_price,
+                         'Sales': sales,
+                         'Date': file_date
+                     })
+
+
+
+
+
+
+
+
 
 
 
