@@ -32,4 +32,32 @@ for category in categories:
         # Extract the date from the file name (e.g., '2.24' from '2.24.xlsx')
         file_date = os.path.splitext(file)[0]
 
+        try:
+             #Read the Excel File
+             data = pd.read_excel(file_path)
+
+             # Handle empty first row
+             if data.iloc[0].isnull().all():
+                 data = pd.read_excel(file_path, header=1)
+
+             #Handle empty first row
+                 # Normalize column names
+                 data.columns = data.columns.str.strip().str.lower()  # Lowercase and strip whitespace
+                 print(f"Columns in file {file_path}: {data.columns.tolist()}")  # Debug: Print column names
+
+                 #Check if the required columns exists
+
+                 # Check if the required columns exist
+                 if len(data.columns) < 5:
+                     print(f"Not enough columns in {file_path}. Skipping this file.")
+                     continue
+
+
+
+
+
+
+
+
+
 
