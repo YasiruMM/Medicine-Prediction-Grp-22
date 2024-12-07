@@ -21,3 +21,15 @@ for category in categories:
     # Construct the path to the subfolder
     category_folder = os.path.join(root_folder, category)
 
+    # Loop through each file in the subfolder
+    for file in os.listdir(category_folder):
+        if file.startswith('~$') or not file.endswith('.xlsx'):  # Skip temporary and non-Excel files
+            continue
+
+        file_path = os.path.join(category_folder, file)
+        print(f"Processing file: {file_path}")  # Debug: Print the file being processed
+
+        # Extract the date from the file name (e.g., '2.24' from '2.24.xlsx')
+        file_date = os.path.splitext(file)[0]
+
+
