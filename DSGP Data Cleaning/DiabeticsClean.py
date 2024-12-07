@@ -77,6 +77,21 @@ for category in categories:
                          'Date': file_date
                      })
 
+                     # Append structured data to the combined DataFrame
+                     combined_data = pd.concat([combined_data, structured_data], ignore_index=True)
+
+        except Exception as e:
+                print(f"Error processing file {file_path}: {e}")
+                continue
+
+
+
+
+
+
+
+
+
 
 
 
