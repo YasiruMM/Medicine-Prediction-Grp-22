@@ -1,80 +1,93 @@
 import pandas as pd
 import os
-import matplotlib.pyplot as plt
-import seaborn as sns
+import re
 
-# Folder containing Atovastine files
-folder_path = "path_to_Atovastine_folder"
-output_file = "cleaned_atovastine.xlsx"
+# Define the main folders for each drug
+drugs_folders = {
+    'Atorvastatin': r'C:/Users/ASUS/OneDrive/Desktop/ATOVASTINE',
+    'Simvastatin': r'C:/Users/ASUS/OneDrive/Desktop/SIMVAS',
+    'Rosuvastatin': r'C:/Users/ASUS/OneDrive/Desktop/Rosuvastatin'
+}
 
+# Output folder for cleaned files
+output_folder = r'C:\Path\To\CleanedFiles'
+os.makedirs(output_folder, exist_ok=True)
 
-# 1. Load all Excel files
-def load_data(folder_path):
-    all_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith('.xlsx')]
-    dataframes = [pd.read_excel(file) for file in all_files]
-    combined_data = pd.concat(dataframes, ignore_index=True)
-    return combined_data
+# Function to extract dosage from drug name
+def extract_dosage(item_name):
+    match = re.search(r'(\d+(\.\d+)?MG)', str(item_name), re.IGNORECASE)
+    if match:
+        return match.group(0).upper()
+    return None
 
+# Function to clean and structure data for a given folder
+def process_drug_data(drug_name, folder_path):
+    combined_data = pd.DataFrame()
 
-# 2. Perform EDA
-def perform_eda(data):
-    print("\nBasic Info:")
-    print(data.info())
+    for file in os.listdir(folder_path):
+        if file.startswith('~$') or not file.endswith('.xlsx'):
+            continue
 
-    print("\nSummary Statistics:")
-    print(data.describe())
+        file_path = os.path.join(folder_path, file)
+        print(f"Processing file: {file_path}")
 
-    print("\nMissing Values:")
-    print(data.isnull().sum())
+        # Extract the date from the file name
+        file_date = os.path.splitext(file)[0]
 
-    print("\nDuplicate Rows:")
-    print(data.duplicated().sum())
+        try:
+            data = pd.read_excel(file_path)
 
-    # Visualization Examples
-    sns.histplot(data['Margin'], kde=True)
-    plt.title('Distribution of Margins')
-    plt.show()
+            if data.iloc[0].isnull().all():
+                data = pd.read_excel(file_path, header=1)
 
-    sns.scatterplot(x='GP', y='Margin', data=data)
-    plt.title('GP vs Margin')
-    plt.show()
+            data.columns = data.columns.str.strip().str.lower()
+            print(f"Columns in {file}: {data.columns.tolist()}")
 
+            if len(data.columns) < 5:
+                print(f"Not enough columns in {file}. Skipping.")
+                continue
 
-# 3. Clean the Data
-def clean_data(data):
-    # Drop duplicates
-    data = data.drop_duplicates()
+            drug_name_column = data.iloc[:, 0]
+            dosage = drug_name_column.apply(extract_dosage)
+            retail_price = data.iloc[:, 4]
+            purchase_price = data.iloc[:, 3]
+            sales = data.iloc[:, -1]
 
-    # Handle missing values (example: fill with 0 or mean)
-    data = data.fillna(0)  # Adjust based on your needs
+            structured_data = pd.DataFrame({
+                'Drug': drug_name,
+                'Drug Name': drug_name_column,
+                'Dosage': dosage,
+                'Retail Price': retail_price,
+                'Purchase Price': purchase_price,
+                'Sales': sales,
+                'Date': file_date
+            })
 
-    # Example: Remove outliers in 'Margin'
-    q1 = data['Margin'].quantile(0.25)
-    q3 = data['Margin'].quantile(0.75)
-    iqr = q3 - q1
-    lower_bound = q1 - 1.5 * iqr
-    upper_bound = q3 + 1.5 * iqr
-    data = data[(data['Margin'] >= lower_bound) & (data['Margin'] <= upper_bound)]
+            combined_data = pd.concat([combined_data, structured_data], ignore_index=True)
 
-    return data
-
-
-# 4. Save cleaned data
-def save_cleaned_data(data, output_file):
-    data.to_excel(output_file, index=False)
-
-
-# Main Execution
-if __name__ == "__main__":
-    # Load the data
-    raw_data = load_data(folder_path)
+        except Exception as e:
+            print(f"Error processing file {file_path}: {e}")
+            continue
 
     # Perform EDA
-    perform_eda(raw_data)
+    print(f"EDA for {drug_name} data:")
+    print(combined_data.describe())
+    print(combined_data.isnull().sum())
 
-    # Clean the data
-    cleaned_data = clean_data(raw_data)
+    # Feature Engineering: Fill missing dosage with 'UNKNOWN'
+    combined_data['Dosage'] = combined_data['Dosage'].fillna('UNKNOWN')
 
-    # Save the cleaned data
-    save_cleaned_data(cleaned_data, output_file)
-    print(f"Cleaned data saved to {output_file}")
+    # Remove rows with completely missing prices
+    combined_data = combined_data.dropna(subset=['Retail Price', 'Purchase Price'], how='all')
+
+    # Calculate Profit Margin
+    combined_data['Profit Margin'] = combined_data['Retail Price'] - combined_data['Purchase Price']
+
+    # Save cleaned data
+    output_file = os.path.join(output_folder, f"cleaned_{drug_name.lower()}.xlsx")
+    combined_data.to_excel(output_file, index=False)
+    print(f"Cleaned data saved for {drug_name} at {output_file}")
+
+# Process each drug folder
+for drug, folder in drugs_folders.items():
+    process_drug_data(drug, folder)
