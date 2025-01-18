@@ -34,12 +34,12 @@ for category in medicine_categories:
         file_date = os.path.splitext(file)[0]
 
         try:
-            # Read the Excel file
-            data = pd.read_excel(file_path)
+            # Read the Excel file, skipping the first row (empty) and using the second row as header
+            data = pd.read_excel(file_path, header=1)
 
             # Handle empty first row
-            if data.iloc[0].isnull().all():
-                data = pd.read_excel(file_path, header=1)
+            if data.isnull().all(axis=1).iloc[0]:
+                data = pd.read_excel(file_path, header=2)  # Skip the first empty row and use the second as the header
 
             # Normalize column names
             data.columns = data.columns.str.strip().str.lower()  # Lowercase and strip whitespace
@@ -49,6 +49,9 @@ for category in medicine_categories:
             if len(data.columns) < 5:
                 print(f"Not enough columns in {file_path}. Skipping this file.")
                 continue
+
+            # Remove the last row (summary row)
+            data = data.iloc[:-1, :]
 
             # Assume the first column always contains the drug name now
             drug_name = data.iloc[:, 0]  # First column: Drug Name
