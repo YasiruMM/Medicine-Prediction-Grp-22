@@ -19,6 +19,7 @@ def extract_dosage(item_name):
         return match.group(0).upper()
     return None
 
+
 # Function to clean and structure data for a given folder
 def process_drug_data(drug_name, folder_path):
     combined_data = pd.DataFrame()
