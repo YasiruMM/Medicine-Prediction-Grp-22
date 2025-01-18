@@ -8,6 +8,7 @@ folder_path = r'C:/Users/ASUS/OneDrive/Desktop/SIMVAS'
 # Initialize an empty DataFrame to store cleaned data
 combined_data = pd.DataFrame()
 
+
 # Function to extract dosage from the Drug Name
 def extract_dosage(item_name):
     match = re.search(r'(\d+(\.\d+)?MG)', str(item_name))  # Captures dosages like "5MG" or "2.5MG"
