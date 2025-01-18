@@ -5,7 +5,6 @@ import re
 # Define the main folders for each drug
 drugs_folders = {
     'Atorvastatin': r'C:/Users/ASUS/OneDrive/Desktop/ATOVASTINE',
-    'Simvastatin': r'C:/Users/ASUS/OneDrive/Desktop/SIMVAS',
     'Rosuvastatin': r'C:/Users/ASUS/OneDrive/Desktop/Rosuvastatin'
 }
 
@@ -31,12 +30,12 @@ def process_drug_data(drug_name, folder_path):
         file_path = os.path.join(folder_path, file)
         print(f"Processing file: {file_path}")
 
-        # Extract the date from the file name
         file_date = os.path.splitext(file)[0]
 
         try:
             data = pd.read_excel(file_path)
 
+            # Handle empty first row
             if data.iloc[0].isnull().all():
                 data = pd.read_excel(file_path, header=1)
 
@@ -44,49 +43,56 @@ def process_drug_data(drug_name, folder_path):
             print(f"Columns in {file}: {data.columns.tolist()}")
 
             if len(data.columns) < 5:
-                print(f"Not enough columns in {file}. Skipping.")
+                print(f"Not enough columns in {file}. Skipping this file.")
                 continue
 
-            drug_name_column = data.iloc[:, 0]
-            dosage = drug_name_column.apply(extract_dosage)
-            retail_price = data.iloc[:, 4]
-            purchase_price = data.iloc[:, 3]
-            sales = data.iloc[:, -1]
+            # Extract necessary data
+            drug_col = data.iloc[:, 0]
+            retail_price_col = data.iloc[:, 4]
+            purchase_price_col = data.iloc[:, 3]
+            sales_col = data.iloc[:, -1]
 
+            # Extract dosage
+            dosage_col = drug_col.apply(extract_dosage)
+
+            # Create structured DataFrame
             structured_data = pd.DataFrame({
                 'Drug': drug_name,
-                'Drug Name': drug_name_column,
-                'Dosage': dosage,
-                'Retail Price': retail_price,
-                'Purchase Price': purchase_price,
-                'Sales': sales,
-                'Date': file_date
+                'Drug Name': drug_col,
+                'Dosage': dosage_col,
+                'Retail Price': retail_price_col,
+                'Purchase Price': purchase_price_col,
+                'Sales': sales_col,
+                'Date': file_date,
             })
 
             combined_data = pd.concat([combined_data, structured_data], ignore_index=True)
 
         except Exception as e:
-            print(f"Error processing file {file_path}: {e}")
+            print(f"Error processing {file_path}: {e}")
             continue
 
-    # Perform EDA
-    print(f"EDA for {drug_name} data:")
-    print(combined_data.describe())
-    print(combined_data.isnull().sum())
+    # Convert price columns to numeric
+    combined_data['Retail Price'] = pd.to_numeric(combined_data['Retail Price'], errors='coerce')
+    combined_data['Purchase Price'] = pd.to_numeric(combined_data['Purchase Price'], errors='coerce')
 
-    # Feature Engineering: Fill missing dosage with 'UNKNOWN'
-    combined_data['Dosage'] = combined_data['Dosage'].fillna('UNKNOWN')
-
-    # Remove rows with completely missing prices
-    combined_data = combined_data.dropna(subset=['Retail Price', 'Purchase Price'], how='all')
+    # Handle missing prices
+    combined_data['Retail Price'].fillna(0, inplace=True)
+    combined_data['Purchase Price'].fillna(0, inplace=True)
 
     # Calculate Profit Margin
     combined_data['Profit Margin'] = combined_data['Retail Price'] - combined_data['Purchase Price']
 
+    # EDA
+    print(f"EDA for {drug_name} data:")
+    print(combined_data.describe(include='all'))
+    print(combined_data.isnull().sum())
+
     # Save cleaned data
-    output_file = os.path.join(output_folder, f"cleaned_{drug_name.lower()}.xlsx")
-    combined_data.to_excel(output_file, index=False)
-    print(f"Cleaned data saved for {drug_name} at {output_file}")
+    output_path = f'C:/Users/ASUS/OneDrive/Desktop/{drug_name}_Cleaned.xlsx'
+    combined_data.to_excel(output_path, index=False, sheet_name=f'{drug_name}')
+    print(f"Cleaned data saved for {drug_name} at {output_path}")
+
 
 # Process each drug folder
 for drug, folder in drugs_folders.items():
