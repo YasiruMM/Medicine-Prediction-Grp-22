@@ -8,9 +8,6 @@ drugs_folders = {
     'Rosuvastatin': r'C:/Users/ASUS/OneDrive/Desktop/Rosuvastatin'
 }
 
-# Output folder for cleaned files
-output_folder = r'C:\Path\To\CleanedFiles'
-os.makedirs(output_folder, exist_ok=True)
 
 # Function to extract dosage from drug name
 def extract_dosage(item_name):
@@ -98,3 +95,5 @@ def process_drug_data(drug_name, folder_path):
 # Process each drug folder
 for drug, folder in drugs_folders.items():
     process_drug_data(drug, folder)
+
+
