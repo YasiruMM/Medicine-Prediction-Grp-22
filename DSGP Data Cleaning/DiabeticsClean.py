@@ -47,7 +47,7 @@ for category in medicine_categories:
 
             # Check if the required columns exist
             if len(data.columns) < 5:
-                print(f"Not enough columns in {file_path}. Skipping this file.")
+                print(f"Not enough columns in {file_path}. Skip this file.")
                 continue
 
             # Remove the last row (summary row)
