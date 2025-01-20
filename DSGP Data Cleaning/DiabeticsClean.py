@@ -87,4 +87,4 @@ for category in medicine_categories:
 output_path = r'D:\IIT\2 Year\Structured_Diabetics.xlsx'
 combined_data.to_excel(output_path, index=False, sheet_name='Diabetics')
 
-print(f"Data structured and saved successfully to {output_path}")
+print(f"Data structured and saved successfully to the path {output_path}")
