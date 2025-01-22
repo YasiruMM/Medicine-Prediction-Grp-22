@@ -66,7 +66,7 @@ for category in medicine_categories:
 
             # Create a structured DataFrame with the necessary columns
             structured_data = pd.DataFrame({
-                'Disease Category': 'Cardiovascular',
+                'Disease Category': 'Diabetics',
                 'Drug Category': category,
                 'Drug Name': drug_name,
                 'Dosage': dosage,  # Place the extracted dosage in the Dosage column
