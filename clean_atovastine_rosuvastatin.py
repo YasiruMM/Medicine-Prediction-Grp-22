@@ -11,10 +11,17 @@ drugs_folders = {
 
 # Function to extract dosage from drug name
 def extract_dosage(item_name):
-    match = re.search(r'(\d+(\.\d+)?MG)', str(item_name), re.IGNORECASE)
+    # Match patterns like "5MG", "20 MG", or "2.5MG"
+    match = re.search(r'(\d+(\.\d+)?\s*MG)', str(item_name).upper())
     if match:
-        return match.group(0).upper()
-    return None
+        return match.group(0).replace(" ", "")  # Remove any spaces in the result
+
+    # If no "MG", try to match standalone numbers like "05" or "10"
+    match = re.search(r'\b\d+\b', str(item_name))
+    if match:
+        return f"{int(match.group(0))}MG"
+
+    return "Unknown"  # if no match is found
 
 
 # Function to clean and structure data for a given folder
@@ -43,6 +50,10 @@ def process_drug_data(drug_name, folder_path):
             if len(data.columns) < 5:
                 print(f"Not enough columns in {file}. Skipping this file.")
                 continue
+
+            # Check if the first column contains 'Item Code' and remove it
+            if 'Item Code' in data.columns[0]:
+                data = data.iloc[:, 1:]  # Remove the first column
 
             # Extract necessary data
             drug_col = data.iloc[:, 0]

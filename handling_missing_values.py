@@ -42,17 +42,17 @@ for sheet_name, df in sheets.items():
 
 print(missing_values_report3)
 
-# Fill missing 'Dosage' with the most frequent value per drug name
+# Replace non-numeric values in relevant columns with NaN
+for col in ['Sales', 'Retail Price', 'Purchase Price']:
+    df[col] = pd.to_numeric(df[col], errors='coerce')
+
+# Fill missing values with imputation logic
 df['Dosage'] = df.groupby('Drug Name')['Dosage'].transform(
     lambda x: x.fillna(x.mode()[0]) if not x.mode().empty else x.fillna('Unknown')
 )
-
-# Fill missing 'Sales' with median sales of the respective drug
 df['Sales'] = df.groupby('Drug')['Sales'].transform(
     lambda x: x.fillna(x.median())
 )
-
-# Fill missing prices with median prices per drug
 df['Retail Price'] = df.groupby('Drug Name')['Retail Price'].transform(
     lambda x: x.fillna(x.median())
 )
@@ -63,4 +63,6 @@ df['Purchase Price'] = df.groupby('Drug Name')['Purchase Price'].transform(
 # Recalculate 'Profit Margin'
 df['Profit Margin'] = df['Retail Price'] - df['Purchase Price']
 
+# Check if there are any missing values left
 print(df.isnull().sum())
+
