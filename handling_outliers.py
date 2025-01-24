@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Function to visualize outliers using box plots
 def visualize_outliers(df, columns):
@@ -9,54 +10,58 @@ def visualize_outliers(df, columns):
     plt.ylabel("Values")
     plt.show()
 
-# Function to remove outliers using the 1.5×IQR rule
-def remove_outliers(df, columns):
-    print("Removing Outliers...")
+# Function to apply Winsorization---capping
+def apply_winsorization(df, columns, lower_percentile=0.05, upper_percentile=0.95):
+    print("Applying Winsorization...")
     for col in columns:
-        Q1 = df[col].quantile(0.25)
-        Q3 = df[col].quantile(0.75)
-        IQR = Q3 - Q1
-        lower_bound = Q1 - 1.5 * IQR
-        upper_bound = Q3 + 1.5 * IQR
+        lower_bound = df[col].quantile(lower_percentile)
+        upper_bound = df[col].quantile(upper_percentile)
 
-        # Filter out rows with values outside the acceptable range
-        initial_rows = df.shape[0]
-        df = df[(df[col] >= lower_bound) & (df[col] <= upper_bound)]
-        final_rows = df.shape[0]
-
-        print(f"{col}: Removed {initial_rows - final_rows} outliers.")
+        # Clip values to the defined bounds
+        df[col] = np.clip(df[col], lower_bound, upper_bound)
+        print(f"{col}: Winsorized to [{lower_bound}, {upper_bound}]")
 
     return df
 
-# Example Usage: Detecting and Removing Outliers
+# Function to clean invalid or unnecessary rows
+def clean_invalid_rows(df, invalid_words=None):
+    if invalid_words is None:
+        invalid_words = ["unknown", "n/a", "na", "null"]  # Define invalid words here
+
+    print("Cleaning invalid rows...")
+    # Replace all string values to lowercase for case-insensitive comparison
+    invalid_regex = "|".join(invalid_words)
+    df = df.replace(rf"(?i){invalid_regex}", np.nan, regex=True)  # Mark invalid cells as NaN
+
+    # Drop rows with NaN in any column
+    df = df.dropna()
+    print("Rows with invalid values have been removed.")
+
+    return df
+
 def process_outliers(file_path, output_path):
     # Load the dataset
     data = pd.read_excel(file_path)
+
+
 
     # Visualize outliers in numeric columns
     numeric_columns = ['Retail Price', 'Purchase Price', 'Sales']
     visualize_outliers(data, numeric_columns)
 
-    # Remove outliers from numeric columns
-    cleaned_data = remove_outliers(data, numeric_columns)
+    data = apply_winsorization(data, numeric_columns)
+
+    data = clean_invalid_rows(data)
 
     # Save the cleaned data
-    cleaned_data.to_excel(output_path, index=False)
-    print(f"Cleaned data saved to {output_path}")
+    data.to_excel(output_path, index=False)
+    print(f"Winsorized data saved to {output_path}")
 
 # File paths
-input_file1 = 'C:/Users/ASUS/OneDrive/Desktop/Atorvastatin_Cleaned_Processed.xlsx'
-output_file1 = 'C:/Users/ASUS/OneDrive/Desktop/Atorvastatin_NoOutliers.xlsx'
+input_file = 'C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Processed.xlsx'
+output_file = 'C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Winsorized.xlsx'
 
-input_file2 = 'C:/Users/ASUS/OneDrive/Desktop/Rosuvastatin_Cleaned_Processed.xlsx'
-output_file2 = 'C:/Users/ASUS/OneDrive/Desktop/Rosuvastatin_NoOutliers.xlsx'
-
-input_file3 = 'C:/Users/ASUS/OneDrive/Desktop/Simvastatin_Cleaned_Processed.xlsx'
-output_file3 = 'C:/Users/ASUS/OneDrive/Desktop/Simvastatin_NoOutliers.xlsx'
-
-process_outliers(input_file1, output_file1)
-process_outliers(input_file2,output_file2)
-process_outliers(input_file3, output_file3)
+process_outliers(input_file, output_file)
 
 
 

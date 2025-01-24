@@ -63,15 +63,8 @@ def clean_excel_file(file_path, output_path):
 
 
 # File paths
-file_paths = [
-    ('C:/Users/ASUS/OneDrive/Desktop/Atorvastatin_Cleaned.xlsx',
-     'C:/Users/ASUS/OneDrive/Desktop/Atorvastatin_Cleaned_Processed.xlsx'),
-    ('C:/Users/ASUS/OneDrive/Desktop/Rosuvastatin_Cleaned.xlsx',
-     'C:/Users/ASUS/OneDrive/Desktop/Rosuvastatin_Cleaned_Processed.xlsx'),
-    ('C:/Users/ASUS/OneDrive/Desktop/Cleaned_Simvastatin_Data.xlsx',
-     'C:/Users/ASUS/OneDrive/Desktop/Simvastatin_Cleaned_Processed.xlsx'),
-]
+input_path='C:/Users/ASUS/OneDrive/Desktop/Combined_Drug_Data.xlsx'
+output_path='C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Processed.xlsx'
 
 # Process each file
-for input_path, output_path in file_paths:
-    clean_excel_file(input_path, output_path)
+clean_excel_file(input_path, output_path)
