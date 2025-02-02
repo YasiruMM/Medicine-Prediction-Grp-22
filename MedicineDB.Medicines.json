@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "679b8e024f94b9f27d39fbc1"
+  },
+  "Brand": "GLUCOBAY",
+  "Generic": "ACARBOSE TABLETS 100MG",
+  "Manufacturer": "BAYER PHARMA AG",
+  "Country": "GERMANY"
+},
+{
+  "_id": {
+    "$oid": "679b8e2d0aefc8edf6b8d97e"
+  },
+  "Brand": "Ibuprofen",
+  "Generic": "Ibuprofen",
+  "Manufacturer": "HealthCorp",
+  "Country": "USA"
+},
+{
+  "_id": {
+    "$oid": "679fc6ef80dbbcc2c960bc11"
+  },
+  "Brand": "GLUCOBAY",
+  "Generic": "ACARBOSE TABLETS 100MG",
+  "Manufacturer": "BAYER PHARMA AG",
+  "Country": "GERMANY"
+},
+{
+  "_id": {
+    "$oid": "679fc6ef80dbbcc2c960bc13"
+  },
+  "Brand": "Ibuprofen",
+  "Generic": "Ibuprofen",
+  "Manufacturer": "HealthCorp",
+  "Country": "USA"
+},
+{
+  "_id": {
+    "$oid": "679fcadc857ad301fa78352c"
+  },
+  "Brand": "GLUCOBAY",
+  "Generic": "ACARBOSE TABLETS 100MG",
+  "Manufacturer": "BAYER PHARMA AG",
+  "Country": "GERMANY"
+},
+{
+  "_id": {
+    "$oid": "679fcadc857ad301fa78352e"
+  },
+  "Brand": "Ibuprofen",
+  "Generic": "Ibuprofen",
+  "Manufacturer": "HealthCorp",
+  "Country": "USA"
+}]
