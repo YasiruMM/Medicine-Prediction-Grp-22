@@ -7,6 +7,7 @@ from sklearn.metrics import accuracy_score, classification_report
 encoded_data = pd.read_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured_Encoded.xlsx')
 
 # Define features (X) and target (y)
+
 X = encoded_data.drop(columns=['Sales'])  # Drop the target column
 y = encoded_data['Sales']  # Target column
 

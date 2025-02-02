@@ -14,7 +14,6 @@ def process_date(x):
     try:
         if isinstance(x, (int, float)):
             x = str(x)
-
         # Handle 'MM.YY' format
         if isinstance(x, str) and '.' in x:
             month, year_suffix = x.split('.')

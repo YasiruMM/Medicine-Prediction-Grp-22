@@ -21,7 +21,6 @@ data = pd.concat([data, encoded_df], axis=1)
 
 # Save the encoded dataset
 data.to_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured_Encoded.xlsx', index=False)
-
 print("Encoded dataset saved successfully!")
 
 from sklearn.model_selection import train_test_split

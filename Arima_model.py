@@ -14,7 +14,6 @@ test_data = pd.read_excel(input_file2, parse_dates=['Date'])
 # Ensure 'Date' is set as the index
 train_data.set_index('Date', inplace=True)
 test_data.set_index('Date', inplace=True)
-
 # Remove duplicate dates by averaging
 train_data = train_data.groupby(train_data.index).mean()
 test_data = test_data.groupby(test_data.index).mean()

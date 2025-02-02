@@ -15,7 +15,6 @@ y = encoded_data['Sales']  # Target column
 bins = [0, 100, 200, float('inf')]  # Adjust ranges based on your dataset
 labels = ['Low', 'Medium', 'High']
 y = pd.cut(y, bins=bins, labels=labels)
-
 # Splitting the dataset
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
