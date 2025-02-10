@@ -1,0 +1,963 @@
+[{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79b4"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ASTAT 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79b5"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ASTAT 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79b6"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ASTAT 40MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79b7"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATOCOR 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79b8"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATOCOR 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79b9"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATOGEN 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ba"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATOGEN 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79bb"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATOGEN 40MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79bc"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATOREM 10 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79bd"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATOREM 20 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79be"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORFIT 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79bf"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORFIT 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c0"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORLIP 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c1"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORLIP 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c2"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORLIP 40MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c3"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORLIP 5MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c4"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVA 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c5"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVA 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c6"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVA 40MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c7"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVA 5MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c8"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVASTATIN (ECURE) 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79c9"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVASTATIN 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ca"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVASTATIN 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79cb"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATORVASTATIN 5MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79cc"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "ATV 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79cd"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "AVAST- 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ce"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "AZTOR 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79cf"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "AZTOR 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d0"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPICON 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d1"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPICON 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d2"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPIGET 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d3"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPIGET 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d4"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPISTAT 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d5"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPITOR 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d6"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPITOR 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d7"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPIZIM 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d8"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LIPIZIM 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79d9"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LITOR 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79da"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LOWATO 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79db"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "LOWATO 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79dc"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "MODLIP 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79dd"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "OPTILIP 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79de"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "PRO-STATIN 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79df"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "PRO-STATIN 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e0"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "VASOLIP 10MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e1"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Atorvastatin",
+  "Drug_Name": "VASOLIP 20MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e2"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "AURORA 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e3"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "AURORA 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e4"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "CRESTOR  28`S 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e5"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "CRESTOR  28`S 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e6"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "CRESTOR 20 28S 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e7"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "INTEROS 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e8"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "LDNIL 05 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79e9"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "LDNIL 10 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ea"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "LDNIL 20 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79eb"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROLIP 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ec"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROLIP 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ed"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROS - 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ee"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSTAT 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ef"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSTAT 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f0"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSTAT 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f1"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSTIN TAB 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f2"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSTIN TAB 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f3"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSU - K 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f4"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUCOR 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f5"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUCOR 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f6"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSULIN 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f7"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSULIN 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f8"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSULIN 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79f9"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSULIP 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79fa"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSULIP 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79fb"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSULIP 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79fc"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUVAS 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79fd"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUVAS 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79fe"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUVAS 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a79ff"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUVASTATIN 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a00"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUVASTATIN 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a01"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSUVASTATIN 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a02"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSWISS 100S 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a03"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSWISS 100S 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a04"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROSWISS 100S 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a05"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROVATIN 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a06"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROVATIN 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a07"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROVATIN 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a08"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROVISTA 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a09"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROVISTA 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a0a"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ROVISTA 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a0b"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "RUSAT 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a0c"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "RUSAT 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a0d"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "RUSAT 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a0e"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "TURBOVAS 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a0f"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "TURBOVAS TABS 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a10"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "VAPTOR 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a11"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "VAPTOR 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a12"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "VAPTOR 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a13"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "X-PLENDED 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a14"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "X-PLENDED 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a15"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "X-PLENDED 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a16"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ZYROVA 10MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a17"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ZYROVA 20MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a18"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Rosuvastatin",
+  "Drug_Name": "ZYROVA 5MG",
+  "Probability_of_Improvement": "85-95%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a19"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Simvastatin",
+  "Drug_Name": "SIMVAS (MEGA PHARMA) 10MG",
+  "Probability_of_Improvement": "75-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a1a"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Simvastatin",
+  "Drug_Name": "SIMVAS 10MG",
+  "Probability_of_Improvement": "75-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a1b"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Simvastatin",
+  "Drug_Name": "SIMVAS 20MG",
+  "Probability_of_Improvement": "75-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a1c"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Simvastatin",
+  "Drug_Name": "SIMVASTATIN 10MG",
+  "Probability_of_Improvement": "75-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a1d"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Simvastatin",
+  "Drug_Name": "ZOSTA 10MG",
+  "Probability_of_Improvement": "75-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a1e"
+  },
+  "Disease_Category": "Cholesterol",
+  "Drug_Category": "Simvastatin",
+  "Drug_Name": "ZOSTA 5MG",
+  "Probability_of_Improvement": "75-85%"
+}]

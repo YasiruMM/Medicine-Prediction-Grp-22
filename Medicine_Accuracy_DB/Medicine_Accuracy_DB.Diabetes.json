@@ -1,0 +1,720 @@
+[{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a1f"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "ALPHA GLUCO",
+  "Drug_Name": "DIABOSE 50MG",
+  "Probability_of_Improvement": "40-60%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a20"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "ALPHA GLUCO",
+  "Drug_Name": "GLUCOBAY 100MG",
+  "Probability_of_Improvement": "40-60%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a21"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "ALPHA GLUCO",
+  "Drug_Name": "GLUCOBAY 50MG",
+  "Probability_of_Improvement": "40-60%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a22"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "AMARYL 1MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a23"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "AMARYL 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a24"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "AMARYL 3MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a25"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "AZUKON MR 30MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a26"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "CONSUCON 80MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a27"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DAONIL 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a28"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIAMICRON 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a29"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIAMICRON MR 30MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a2a"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIAMICRON MR 60MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a2b"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIANORM 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a2c"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIANORM OD 30 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a2d"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIANORM OD 60 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a2e"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIAPRIDE 1MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a2f"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIAPRIDE 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a30"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIATICA 80MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a31"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIAZIDE TAB 40MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a32"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "DIAZIDE TAB 80MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a33"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "EUGLIM 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a34"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "EUGLIM 4MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a35"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "EUGLIZIP 5MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a36"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GD-CARE 5MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a37"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GETRIL 1MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a38"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GETRIL 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a39"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GETRIL 3MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a3a"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GETRIL 4MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a3b"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLEMAZ 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a3c"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLEMAZ 4MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a3d"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIBENCOMIDE (INGA) 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a3e"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICAD 40MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a3f"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICLAZIDE 40MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a40"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICLAZIDE (IPCA) 40MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a41"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICLAZIDE 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a42"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICLAZIDE (SPMC) 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a43"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICLAZIDE SPMC 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a44"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICLAZIDE MR 30MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a45"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLICLAZIDE MR (IPCA) 60MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a46"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIDABET 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a47"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIMEPRIDE 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a48"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIMEPRIDE (USV) 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a49"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIMIPRIDE 4MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a4a"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIPIZ 5MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a4b"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIPIZIDE (USV) 5MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a4c"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLITROL CR 30MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a4d"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLITROL CR 60MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a4e"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIVIC 40MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a4f"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIVIC 80MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a50"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIVIC MR 30 80MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a51"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIVIC MR 60 80MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a52"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIX 40 80MG",
+  "Probability_of_Improvement": "60-75%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a53"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIZIDE TAB 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a54"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLIZYM MR 30MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a55"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLUCOZIDE 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a56"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYCHECK TAB 40MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a57"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYCHECK TAB 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a58"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYCINORM 40MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a59"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYCINORM 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a5a"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYCINORM MR 30MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a5b"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYCLAPAN 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a5c"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYNASE 5MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a5d"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GLYZ MR 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a5e"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GP- 1MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a5f"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "GP- 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a60"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "MEDOCLAZIDE 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a61"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "METRIX 2MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a62"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "NIDONIL 80MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a63"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "ORINASE 4MG",
+  "Probability_of_Improvement": "70-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a64"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "RECLIDE 80MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a65"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "RECLIDE MR 30MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a66"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "RECLIDE MR 60MG",
+  "Probability_of_Improvement": "65-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a67"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "TOLBUTAMIDE TABS (INTPH) 80MG",
+  "Probability_of_Improvement": "50-70%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a68"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "VEXGID 80MG",
+  "Probability_of_Improvement": "50-70%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a69"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "SULFON",
+  "Drug_Name": "VEXGID MR 30 80MG",
+  "Probability_of_Improvement": "50-70%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a6a"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "THIAZOL",
+  "Drug_Name": "PIOGLITAZONE (SPC) 15MG",
+  "Probability_of_Improvement": "60-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a6b"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "THIAZOL",
+  "Drug_Name": "PIOGLITAZONE (USV) 15MG",
+  "Probability_of_Improvement": "60-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a6c"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "THIAZOL",
+  "Drug_Name": "PIOGLITAZONE  (SPC) 30MG",
+  "Probability_of_Improvement": "60-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a6d"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "THIAZOL",
+  "Drug_Name": "PIOZ 15MG",
+  "Probability_of_Improvement": "60-80%"
+},
+{
+  "_id": {
+    "$oid": "67aa5263931a44bfca9a7a6e"
+  },
+  "Disease_Category": "Diabetes",
+  "Drug_Category": "THIAZOL",
+  "Drug_Name": "PIOZ 30MG",
+  "Probability_of_Improvement": "60-80%"
+}]

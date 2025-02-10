@@ -1,0 +1,846 @@
+[{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df1"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "AMLODAC 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df2"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "AMLONG 10MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df3"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "AMLONG 2. 2. 2.5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df4"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "AMLONG 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df5"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "AMLOPRESS 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df6"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "AMLOSUN 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df7"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "STAMLO 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df8"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "STAMLO 10MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6df9"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "AMLODIP",
+  "Drug_Name": "AMILODIPINE (CADLA) 10MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6dfa"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ASPIN 100MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6dfb"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ASPIRIN (SPC) 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6dfc"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ASPRIN 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6dfd"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ASTRIX 100MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6dfe"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "CARDIPRIN 100MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6dff"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "CAREPRIN 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e00"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ECORIN 150MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e01"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ECORIN 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e02"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ECOSPRIN 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e03"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "XSPRIN 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e04"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "LOSARTAN K 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e05"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ASPIRIN",
+  "Drug_Name": "ASPIRIN 150MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e06"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPACT 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e07"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPID 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e08"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPIDOGREL(MEPRO) 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e09"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPIDOGREL 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e0a"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPIL 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e0b"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPILET 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e0c"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPITAB 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e0d"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPIVAS 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e0e"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPIVIC 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e0f"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "DEPLATTE 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e10"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "NOKLOT 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e11"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "PIDLET 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e12"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "PLAGERIN 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e13"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "PLATEX 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e14"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "PLAVIX 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e15"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "PURIL 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e16"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "TROKAN 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e17"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "LOSARTAN K 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e18"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPIDOGREL (MEPRO) 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e19"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "CLOPIDOGREL",
+  "Drug_Name": "CLOPIDO 75MG",
+  "Probability_of_Improvement": "80-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e1a"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "ENALAPRIL (AGIO) 10MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e1b"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "ENALAPRIL (AGIO) 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e1c"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "ENAM 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e1d"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "ENVAS 10MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e1e"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "ENVAS 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e1f"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "RENITEC 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e20"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "LOSARTAN K 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e21"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "ENALAPRIL(AGIO) 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e22"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "AMPRIL 5MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e23"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "ENALA",
+  "Drug_Name": "ENALAPRIL(AGIO) 10MG",
+  "Probability_of_Improvement": "70-85%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e24"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ANGIZAAR 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e25"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ANGIZAAR 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e26"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ANGIZAAR-H 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e27"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "CARDON 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e28"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "CARDON 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e29"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "COSART 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e2a"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "COSART 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e2b"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LARA 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e2c"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LK 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e2d"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LK 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e2e"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSACAR 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e2f"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSACAR 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e30"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSACAR -H 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e31"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSARTAN K (SPC) 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e32"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSARTAN K 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e33"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSATRUST 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e34"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSATRUST 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e35"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSATRUST-H 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e36"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSAVIC 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e37"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOWPRES 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e38"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOZART 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e39"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOZART 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e3a"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "MYOTAN TABS 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e3b"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "MYOTAN TABS 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e3c"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "NORMOPRESS 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e3d"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "NORMOPRESS 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e3e"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "NORMOZIDE/12. 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e3f"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "OSARTIL 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e40"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "OSARTIL 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e41"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "REPACE 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e42"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "REPACE 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e43"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "REPACE -H 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e44"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "REPACE -H 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e45"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "RESILO 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e46"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "RESILO 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e47"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ZAART 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e48"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ZAART 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e49"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ZAART -H 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e4a"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "COZAAR 28S 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e4b"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSAVIC 50 50MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e4c"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "LOSACAR -H 75MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e4d"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ZAART -H 25MG",
+  "Probability_of_Improvement": "75-90%"
+},
+{
+  "_id": {
+    "$oid": "67aa53608a4d7fac18fd6e4e"
+  },
+  "Disease_Category": "Cardiovascular",
+  "Drug_Category": "LOSARTAN",
+  "Drug_Name": "ANGIZAAR-H 75MG",
+  "Probability_of_Improvement": "75-90%"
+}]
