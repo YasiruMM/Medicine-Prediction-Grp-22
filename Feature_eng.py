@@ -29,6 +29,7 @@ def feature_engineering(df):
     for lag in range(1, 3):  # Lag_1, Lag_2
         df[f'Lag_{lag}'] = df.groupby('Drug Name')['Sales'].shift(lag)
 
+
     # Step 4: Rolling & EMA Features
     df['Rolling_Mean_3'] = df.groupby('Drug Name')['Sales'].transform(lambda x: x.rolling(3, min_periods=1).mean())
     df['EMA_3'] = df.groupby('Drug Name')['Sales'].transform(lambda x: x.ewm(span=3, adjust=False).mean())
@@ -56,7 +57,12 @@ def feature_engineering(df):
     upper_cap = df['Buffer Stock'].quantile(0.95)
     df['Buffer Stock'] = df['Buffer Stock'].clip(lower=lower_cap, upper=upper_cap).round().astype(int)
 
-    # Step 9: Ensure Columns Order
+    # Step 9: Fill Missing Values
+    df.fillna(method='ffill', inplace=True)
+    df.fillna(method='bfill', inplace=True)
+    df.fillna(df.groupby('Drug Name')['Sales'].transform('mean'), inplace=True)
+
+    # Step 10: Ensure Columns Order
     final_columns = ['Disease Category', 'Drug Category', 'Drug Name', 'Dosage', 'Retail Price','Purchase Price', 'Sales', 'Date', 'Year', 'Quarter', 'Month','Lag_1', 'Lag_2', 'Rolling_Mean_3', 'EMA_3', 'Mean Sale', 'CV','Buffer Percentage', 'Buffer Stock',]
     df = df[final_columns]
 
