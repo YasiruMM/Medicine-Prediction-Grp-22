@@ -1,0 +1,43 @@
+<!-- filepath: /c:/Users/user/Documents/GitHub/Medicine-Prediction-Grp-22/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cholesterol Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cholesterol Data</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Disease Category</th>
+                    <th>Drug Category</th>
+                    <th>Drug Name</th>
+                    <th>Probability of Improvement</th>
+                    <th>Manufacture</th>
+                    <th>Country</th>
+                    <th>Certifications</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.Disease_Category }}</td>
+                    <td>{{ item.Drug_Category }}</td>
+                    <td>{{ item.Drug_Name }}</td>
+                    <td>{{ item.Probability_of_Improvement }}</td>
+                    <td>{{ item.Manufacture }}</td>
+                    <td>{{ item.Country }}</td>
+                    <td>{{ item.Certifications }}</td>
+                    <td>{{ item.Notes }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
