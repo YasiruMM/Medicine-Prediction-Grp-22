@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="044091ed-b6fe-43c1-bc54-02ab7c62947c" name="Changes" comment="final code cleanings" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Cholesterol_Data_Cleaning-and-future_demand_prediction_component" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;OnaraG&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/YasiruMM/Medicine-Prediction-Grp-22&quot;,
+    &quot;accountId&quot;: &quot;0fb2c5cb-81e4-449c-9ef1-560040fa5cbe&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2riAaqUbXJCL50SszjaoTbdo2PL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Arima_model.executor": "Run",
+    "Python.Encode.executor": "Run",
+    "Python.Feature_eng.executor": "Run",
+    "Python.Linear Regression.executor": "Run",
+    "Python.Normalization_Scalling_Encoding.executor": "Run",
+    "Python.Random_Forest.executor": "Run",
+    "Python.Splitdataset.executor": "Run",
+    "Python.Stock_generator.executor": "Run",
+    "Python.XGBoost_model.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.clean_atovastine.executor": "Run",
+    "Python.clean_atovastine_rosuvastatin.executor": "Run",
+    "Python.clean_simvas.executor": "Run",
+    "Python.combined_data.executor": "Run",
+    "Python.data_preprocessing.executor": "Run",
+    "Python.handling_missing_values.executor": "Run",
+    "Python.handling_outliers.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Cholesterol__Data__Cleaning",
+    "last_opened_file_path": "C:/Users/ASUS/OneDrive/Desktop/DE/PythonProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Medicine-Prediction-Grp-22" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="clean_atovastine_rosuvastatin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Medicine-Prediction-Grp-22" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\ASUS\PycharmProjects\Medicine-Prediction-Grp-22\clean_atovastine_rosuvastatin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.clean_atovastine_rosuvastatin" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.clean_atovastine_rosuvastatin" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.clean_atovastine_rosuvastatin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
+        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="044091ed-b6fe-43c1-bc54-02ab7c62947c" name="Changes" comment="" />
+      <created>1737031591538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737031591538</updated>
+      <workItem from="1737031596964" duration="2707000" />
+      <workItem from="1737196058807" duration="13329000" />
+      <workItem from="1737296880790" duration="8488000" />
+      <workItem from="1737446896934" duration="12658000" />
+      <workItem from="1737691157096" duration="47606000" />
+      <workItem from="1738479529467" duration="20207000" />
+      <workItem from="1738680153222" duration="230000" />
+      <workItem from="1738684198911" duration="5959000" />
+      <workItem from="1738729836823" duration="29654000" />
+      <workItem from="1739609770178" duration="8051000" />
+      <workItem from="1739700679122" duration="2168000" />
+      <workItem from="1739943991240" duration="17585000" />
+      <workItem from="1740194469399" duration="13418000" />
+      <workItem from="1740310546011" duration="23083000" />
+      <workItem from="1740978586826" duration="9596000" />
+      <workItem from="1741243102177" duration="19589000" />
+      <workItem from="1741620532362" duration="85000" />
+      <workItem from="1741621486785" duration="104000" />
+      <workItem from="1741629055710" duration="223000" />
+      <workItem from="1741629357211" duration="32000" />
+      <workItem from="1741976900609" duration="226000" />
+      <workItem from="1741981890632" duration="3406000" />
+      <workItem from="1742023157785" duration="82000" />
+      <workItem from="1742129005041" duration="16465000" />
+      <workItem from="1742785211229" duration="1694000" />
+      <workItem from="1742995220564" duration="3767000" />
+      <workItem from="1743360913434" duration="1141000" />
+      <workItem from="1743516527684" duration="110000" />
+      <workItem from="1743516846637" duration="1638000" />
+      <workItem from="1743582955354" duration="110000" />
+      <workItem from="1743769756468" duration="4188000" />
+      <workItem from="1743777071592" duration="2584000" />
+      <workItem from="1743779746879" duration="1485000" />
+    </task>
+    <task id="LOCAL-00001" summary="Cleaning atovastine files">
+      <option name="closed" value="true" />
+      <created>1737037635164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737037635165</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cleaning files">
+      <option name="closed" value="true" />
+      <created>1737198708469</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737198708471</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cleaning files">
+      <option name="closed" value="true" />
+      <created>1737204136329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737204136330</updated>
+    </task>
+    <task id="LOCAL-00004" summary="EDA">
+      <option name="closed" value="true" />
+      <created>1737207717498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737207717499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="EDA_Cholesterol">
+      <option name="closed" value="true" />
+      <created>1737207743417</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737207743417</updated>
+    </task>
+    <task id="LOCAL-00006" summary="EDA_Cholesterol">
+      <option name="closed" value="true" />
+      <created>1737208340772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737208340773</updated>
+    </task>
+    <task id="LOCAL-00007" summary="clean 2 drugs">
+      <option name="closed" value="true" />
+      <created>1737222923574</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737222923575</updated>
+    </task>
+    <task id="LOCAL-00008" summary="clean drug">
+      <option name="closed" value="true" />
+      <created>1737223619815</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737223619816</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Handling Missing Values">
+      <option name="closed" value="true" />
+      <created>1737261930592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737261930593</updated>
+    </task>
+    <task id="LOCAL-00010" summary="handle item codes">
+      <option name="closed" value="true" />
+      <created>1737522394896</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737522394896</updated>
+    </task>
+    <task id="LOCAL-00011" summary="handling_outliers_first_attempt">
+      <option name="closed" value="true" />
+      <created>1737566046575</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737566046575</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ending preprocessing">
+      <option name="closed" value="true" />
+      <created>1737733236783</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1737733236783</updated>
+    </task>
+    <task id="LOCAL-00013" summary="stock generating">
+      <option name="closed" value="true" />
+      <created>1737740874762</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737740874763</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Linear Regression">
+      <option name="closed" value="true" />
+      <created>1737799748690</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737799748691</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Feature engineering">
+      <option name="closed" value="true" />
+      <created>1738481193442</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738481193443</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Feature engineering">
+      <option name="closed" value="true" />
+      <created>1738481242343</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738481242343</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Models">
+      <option name="closed" value="true" />
+      <created>1738482141094</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1738482141095</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Models">
+      <option name="closed" value="true" />
+      <created>1738948624674</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1738948624675</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Models">
+      <option name="closed" value="true" />
+      <created>1739122612710</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739122612710</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Again going through the data preprocessing and feature engineering">
+      <option name="closed" value="true" />
+      <created>1739561687907</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1739561687907</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Arima Model">
+      <option name="closed" value="true" />
+      <created>1739609959290</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1739609959290</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Random Forest model">
+      <option name="closed" value="true" />
+      <created>1740291436966</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1740291436968</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Arima and Sarima models">
+      <option name="closed" value="true" />
+      <created>1740365799865</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1740365799865</updated>
+    </task>
+    <task id="LOCAL-00024" summary="EDA">
+      <option name="closed" value="true" />
+      <created>1741351622849</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1741351622849</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added eda before FE">
+      <option name="closed" value="true" />
+      <created>1742178366454</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1742178366454</updated>
+    </task>
+    <task id="LOCAL-00026" summary="final model corrections">
+      <option name="closed" value="true" />
+      <created>1742178399552</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1742178399552</updated>
+    </task>
+    <task id="LOCAL-00027" summary="small changes">
+      <option name="closed" value="true" />
+      <created>1742310799991</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1742310799991</updated>
+    </task>
+    <task id="LOCAL-00028" summary="final xgb model">
+      <option name="closed" value="true" />
+      <created>1742785537003</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1742785537003</updated>
+    </task>
+    <task id="LOCAL-00029" summary="final code cleanings">
+      <option name="closed" value="true" />
+      <created>1743773480338</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1743773480339</updated>
+    </task>
+    <task id="LOCAL-00030" summary="final code cleanings">
+      <option name="closed" value="true" />
+      <created>1743779087810</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1743779087810</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleaning atovastine files" />
+    <MESSAGE value="Cleaning files" />
+    <MESSAGE value="EDA_Cholesterol" />
+    <MESSAGE value="clean 2 drugs" />
+    <MESSAGE value="clean drug" />
+    <MESSAGE value="Handling Missing Values" />
+    <MESSAGE value="handle item codes" />
+    <MESSAGE value="handling_outliers_first_attempt" />
+    <MESSAGE value="ending preprocessing" />
+    <MESSAGE value="stock generating" />
+    <MESSAGE value="Linear Regression" />
+    <MESSAGE value="Feature engineering" />
+    <MESSAGE value="Models" />
+    <MESSAGE value="Again going through the data preprocessing and feature engineering" />
+    <MESSAGE value="Arima Model" />
+    <MESSAGE value="Random Forest model" />
+    <MESSAGE value="Arima and Sarima models" />
+    <MESSAGE value="EDA" />
+    <MESSAGE value="added eda before FE" />
+    <MESSAGE value="final model corrections" />
+    <MESSAGE value="small changes" />
+    <MESSAGE value="final xgb model" />
+    <MESSAGE value="final code cleanings" />
+    <option name="LAST_COMMIT_MESSAGE" value="final code cleanings" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$data_preprocessing.coverage" NAME="data_preprocessing Coverage Results" MODIFIED="1739379523640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$clean_atovastine.coverage" NAME="clean_atovastine Coverage Results" MODIFIED="1737202673980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Stock_generator.coverage" NAME="Stock_generator Coverage Results" MODIFIED="1739376605515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$handling_outliers.coverage" NAME="handling_outliers Coverage Results" MODIFIED="1737732350194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Encode.coverage" NAME="Encode Coverage Results" MODIFIED="1738436765587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$XGBoost_model.coverage" NAME="XGBoost_model Coverage Results" MODIFIED="1738685367570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$clean_atovastine_rosuvastatin.coverage" NAME="clean_atovastine_rosuvastatin Coverage Results" MODIFIED="1740142233271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$app.coverage" NAME="app Coverage Results" MODIFIED="1742315880774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$handling_missing_values.coverage" NAME="handling_missing_values Coverage Results" MODIFIED="1737706970817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Linear_Regression.coverage" NAME="Linear Regression Coverage Results" MODIFIED="1738520782326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Normalization_Scalling_Encoding.coverage" NAME="Normalization_Scalling_Encoding Coverage Results" MODIFIED="1737732444521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$clean_simvas.coverage" NAME="clean_simvas Coverage Results" MODIFIED="1737564244221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Feature_eng.coverage" NAME="Feature_eng Coverage Results" MODIFIED="1741433985611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Arima_model.coverage" NAME="Arima_model Coverage Results" MODIFIED="1738510886630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$combined_data.coverage" NAME="combined_data Coverage Results" MODIFIED="1737706611687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Splitdataset.coverage" NAME="Splitdataset Coverage Results" MODIFIED="1738687240631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Medicine_Prediction_Grp_22$Random_Forest.coverage" NAME="Random_Forest Coverage Results" MODIFIED="1738684576478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

@@ -1,0 +1,345 @@
+Index: Splitdataset.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import matplotlib.pyplot as plt\r\nimport pandas as pd\r\n\r\n# Load your dataset\r\ninput_file = 'C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured.xlsx'\r\ndata = pd.read_excel(input_file)\r\n\r\n# Check if the 'Date' column exists\r\nif 'Date' not in data.columns:\r\n    raise ValueError(\"The 'Date' column is missing in the dataset.\")\r\n\r\n# Handle invalid or missing dates\r\ndef process_date(x):\r\n    try:\r\n        if isinstance(x, (int, float)):\r\n            x = str(x)\r\n\r\n        # Handle 'MM.YY' format\r\n        if isinstance(x, str) and '.' in x:\r\n            month, year_suffix = x.split('.')\r\n            year = f\"20{year_suffix.strip()}\"\r\n            month = int(month.strip())\r\n            return f\"{year}-{month:02d}-01\"\r\n        # Handle valid full dates (e.g., '2024-02-01')\r\n        elif pd.to_datetime(x, errors='coerce') is not pd.NaT:\r\n            return x\r\n    except Exception as e:\r\n        print(f\"Error processing date: {x} - {e}\")\r\n    return None\r\n\r\n\r\n# Apply the date processing function\r\ndata['Processed_Date'] = data['Date'].apply(process_date)\r\n\r\nprint(\"Processed_Date Column:\\n\", data['Processed_Date'].head())\r\nprint(\"Converted Date Column:\\n\", data['Date'].head())\r\n\r\n# Convert the processed dates to datetime\r\ndata['Date'] = pd.to_datetime(data['Processed_Date'], errors='coerce')\r\n\r\n# Drop rows with invalid dates\r\ndata = data.dropna(subset=['Date'])\r\n\r\n# Check the date range of the dataset\r\nprint(f\"Dataset date range: {data['Date'].min()} to {data['Date'].max()}\")\r\n\r\n# Split the data into training and testing sets\r\ntrain_data = data[data['Date'] < '2024-05-01']\r\ntest_data = data[data['Date'] >= '2024-05-01']\r\n\r\n# Save the train and test sets if needed\r\ntrain_data.to_excel('train_data.xlsx', index=False)\r\ntest_data.to_excel('test_data.xlsx', index=False)\r\n\r\nprint(\"Train and test datasets created successfully!\")\r\n\r\nprint(f\"Training set size: {len(train_data)}\")\r\nprint(f\"Testing set size: {len(test_data)}\")\r\n\r\n
+===================================================================
+diff --git a/Splitdataset.py b/Splitdataset.py
+--- a/Splitdataset.py	(revision e250ddbca7ac8ae40996e1baa117f1754b356247)
++++ b/Splitdataset.py	(date 1738481363179)
+@@ -17,6 +17,7 @@
+ 
+         # Handle 'MM.YY' format
+         if isinstance(x, str) and '.' in x:
++
+             month, year_suffix = x.split('.')
+             year = f"20{year_suffix.strip()}"
+             month = int(month.strip())
+Index: Encode.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\nfrom sklearn.preprocessing import OneHotEncoder\r\n\r\n# Load the dataset\r\ndata = pd.read_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured.xlsx')\r\n\r\n# Identify categorical features\r\ncategorical_features = data.select_dtypes(include=['object', 'category']).columns\r\nprint(\"Categorical features:\", categorical_features)\r\n\r\n# Apply One-Hot Encoding\r\nencoder = OneHotEncoder(sparse_output=False, drop='first')  # drop='first' to avoid multicollinearity\r\nencoded_features = encoder.fit_transform(data[categorical_features])\r\n\r\n# Convert encoded features to a DataFrame with meaningful column names\r\nencoded_df = pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))\r\n\r\n# Drop original categorical columns and concatenate encoded features\r\ndata = data.drop(categorical_features, axis=1)\r\ndata = pd.concat([data, encoded_df], axis=1)\r\n\r\n# Save the encoded dataset\r\ndata.to_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured_Encoded.xlsx', index=False)\r\n\r\nprint(\"Encoded dataset saved successfully!\")\r\n\r\nfrom sklearn.model_selection import train_test_split\r\n\r\n# Load the encoded dataset\r\nencoded_data = pd.read_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured_Encoded.xlsx')\r\n\r\n# Define features (X) and target (y)\r\nfeatures = encoded_data.drop(columns=['Sales'])  # Drop the target column\r\ntarget = encoded_data['Sales']  # Target column\r\n\r\n# Split the dataset into train and test sets (80% train, 20% test)\r\nX_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)\r\n\r\n# Check the sizes of the train and test sets\r\nprint(f\"Train data size: {len(X_train)}\")\r\nprint(f\"Test data size: {len(X_test)}\")
+===================================================================
+diff --git a/Encode.py b/Encode.py
+--- a/Encode.py	(revision e250ddbca7ac8ae40996e1baa117f1754b356247)
++++ b/Encode.py	(date 1738481362999)
+@@ -22,6 +22,7 @@
+ # Save the encoded dataset
+ data.to_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured_Encoded.xlsx', index=False)
+ 
++
+ print("Encoded dataset saved successfully!")
+ 
+ from sklearn.model_selection import train_test_split
+Index: Random_Forest.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\nfrom sklearn.ensemble import RandomForestClassifier\r\nfrom sklearn.model_selection import train_test_split\r\nfrom sklearn.metrics import accuracy_score, classification_report\r\n\r\n# Load the encoded dataset\r\nencoded_data = pd.read_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured_Encoded.xlsx')\r\n\r\n# Define features (X) and target (y)\r\nX = encoded_data.drop(columns=['Sales'])  # Drop the target column\r\ny = encoded_data['Sales']  # Target column\r\n\r\n# Convert continuous 'Sales' to discrete categories\r\n# Define bins and labels for classification\r\nbins = [0, 100, 200, float('inf')]  # Adjust ranges based on your dataset\r\nlabels = ['Low', 'Medium', 'High']\r\ny = pd.cut(y, bins=bins, labels=labels)\r\n\r\n# Splitting the dataset\r\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\r\n\r\n# Random Forest Model\r\nrf_model = RandomForestClassifier(n_estimators=100, random_state=42)\r\nrf_model.fit(X_train, y_train)\r\n\r\n# Predictions\r\nrf_predictions = rf_model.predict(X_test)\r\n\r\n# Evaluation\r\nprint(\"Random Forest Accuracy:\", accuracy_score(y_test, rf_predictions))\r\nprint(classification_report(y_test, rf_predictions))\r\n
+===================================================================
+diff --git a/Random_Forest.py b/Random_Forest.py
+--- a/Random_Forest.py	(revision e250ddbca7ac8ae40996e1baa117f1754b356247)
++++ b/Random_Forest.py	(date 1738481363044)
+@@ -16,6 +16,7 @@
+ labels = ['Low', 'Medium', 'High']
+ y = pd.cut(y, bins=bins, labels=labels)
+ 
++
+ # Splitting the dataset
+ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+ 
+Index: Arima_model.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\nimport numpy as np\r\nimport matplotlib.pyplot as plt\r\nfrom statsmodels.tsa.arima.model import ARIMA\r\nfrom sklearn.metrics import mean_absolute_error, mean_squared_error\r\nfrom pmdarima import auto_arima\r\n\r\n# Load datasets with proper datetime parsing\r\ninput_file1 = 'train_data.xlsx'\r\ninput_file2 = 'test_data.xlsx'\r\ntrain_data = pd.read_excel(input_file1, parse_dates=['Date'])\r\ntest_data = pd.read_excel(input_file2, parse_dates=['Date'])\r\n\r\n# Ensure 'Date' is set as the index\r\ntrain_data.set_index('Date', inplace=True)\r\ntest_data.set_index('Date', inplace=True)\r\n\r\n# Remove duplicate dates by averaging\r\ntrain_data = train_data.groupby(train_data.index).mean()\r\ntest_data = test_data.groupby(test_data.index).mean()\r\n\r\n# Sort before setting frequency\r\ntrain_data = train_data.sort_index().asfreq('ME', method='ffill')\r\ntest_data = test_data.sort_index().asfreq('ME', method='ffill')\r\n\r\n# Check for missing values\r\nprint(\"Missing dates in train:\", train_data.isnull().sum())\r\nprint(\"Missing dates in test:\", test_data.isnull().sum())\r\n\r\n# Auto ARIMA for best (p, d, q)\r\nbest_model = auto_arima(train_data['Sales'], seasonal=False, trace=True)\r\nprint(\"Best ARIMA Order:\", best_model.order)\r\n\r\n# Fit ARIMA model with best order\r\nmodel = ARIMA(train_data['Sales'], order=best_model.order)\r\nmodel_fit = model.fit()\r\n\r\n# Forecasting\r\nif len(test_data) > 0:\r\n    predictions = model_fit.forecast(steps=len(test_data))\r\n    predictions.index = test_data.index  # Align predictions with test index\r\nelse:\r\n    predictions = model_fit.forecast(steps=6)\r\n    print(\"Forecasted Sales for Next 6 Periods:\")\r\n    print(predictions)\r\n\r\n# Evaluate Performance (only if test data is available)\r\nif len(test_data) > 0:\r\n    mae = mean_absolute_error(test_data['Sales'], predictions)\r\n    rmse = np.sqrt(mean_squared_error(test_data['Sales'], predictions))\r\n    print(f\"ARIMA - Mean Absolute Error: {mae}\")\r\n    print(f\"ARIMA - Root Mean Squared Error: {rmse}\")\r\n\r\n    # Plot predictions vs actual\r\n    plt.figure(figsize=(10, 6))\r\n    plt.plot(test_data.index, test_data['Sales'], label='Actual', color='blue')\r\n    plt.plot(test_data.index, predictions, label='Predicted', color='red', linestyle='dashed')\r\n    plt.title('ARIMA: Actual vs Predicted Sales')\r\n    plt.xlabel('Date')\r\n    plt.ylabel('Sales')\r\n    plt.legend()\r\n    plt.show()\r\n
+===================================================================
+diff --git a/Arima_model.py b/Arima_model.py
+--- a/Arima_model.py	(revision e250ddbca7ac8ae40996e1baa117f1754b356247)
++++ b/Arima_model.py	(date 1738481362952)
+@@ -15,6 +15,7 @@
+ train_data.set_index('Date', inplace=True)
+ test_data.set_index('Date', inplace=True)
+ 
++
+ # Remove duplicate dates by averaging
+ train_data = train_data.groupby(train_data.index).mean()
+ test_data = test_data.groupby(test_data.index).mean()
+Index: XGBoost_model.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pandas as pd\r\nimport xgboost as xgb\r\nfrom sklearn.model_selection import train_test_split\r\nfrom sklearn.metrics import accuracy_score, classification_report\r\n\r\n# Load the encoded dataset\r\nencoded_data = pd.read_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_Featured_Encoded.xlsx')\r\n\r\n# Define features (X) and target (y)\r\nX = encoded_data.drop(columns=['Sales'])  # Drop the target column\r\ny = encoded_data['Sales']  # Target column\r\n\r\n# Convert continuous 'Sales' to discrete categories\r\nbins = [0, 100, 200, float('inf')]  # Adjust ranges based on your dataset\r\nlabels = [0, 1, 2]  # Encoding categories as 0 (Low), 1 (Medium), 2 (High)\r\ny = pd.cut(y, bins=bins, labels=labels).astype(int)  # Convert to numerical labels\r\n\r\n# Splitting the dataset\r\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\r\n\r\n# XGBoost Model\r\nxgb_model = xgb.XGBClassifier(n_estimators=100, random_state=42, use_label_encoder=False, eval_metric='mlogloss')\r\nxgb_model.fit(X_train, y_train)\r\n\r\n# Predictions\r\nxgb_predictions = xgb_model.predict(X_test)\r\n\r\n# Evaluation\r\nprint(\"XGBoost Accuracy:\", accuracy_score(y_test, xgb_predictions))\r\nprint(classification_report(y_test, xgb_predictions))\r\n
+===================================================================
+diff --git a/XGBoost_model.py b/XGBoost_model.py
+--- a/XGBoost_model.py	(revision e250ddbca7ac8ae40996e1baa117f1754b356247)
++++ b/XGBoost_model.py	(date 1738481362911)
+@@ -11,6 +11,7 @@
+ y = encoded_data['Sales']  # Target column
+ 
+ # Convert continuous 'Sales' to discrete categories
++
+ bins = [0, 100, 200, float('inf')]  # Adjust ranges based on your dataset
+ labels = [0, 1, 2]  # Encoding categories as 0 (Low), 1 (Medium), 2 (High)
+ y = pd.cut(y, bins=bins, labels=labels).astype(int)  # Convert to numerical labels
+Index: EDA.ipynb
+===================================================================
+diff --git a/EDA.ipynb b/EDA.ipynb
+--- a/EDA.ipynb	(revision e250ddbca7ac8ae40996e1baa117f1754b356247)
++++ b/EDA.ipynb	(date 1737745748453)
+@@ -1,184 +1,75 @@
+-{
+- "cells": [
+-  {
+-   "metadata": {
+-    "jupyter": {
+-     "is_executing": true
+-    }
+-   },
+-   "cell_type": "code",
+-   "source": [
+-    "import pandas as pd\n",
+-    "data = pd.read_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_With_Stock.xlsx')\n"
+-   ],
+-   "id": "197ab0c50a4dab19",
+-   "outputs": [],
+-   "execution_count": null
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "code",
+-   "outputs": [],
+-   "execution_count": null,
+-   "source": [
+-    "print(data.info())\n",
+-    "print(data.describe())\n",
+-    "print(data.head())\n"
+-   ],
+-   "id": "3c369fa3efcd7e17"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "markdown",
+-   "source": [
+-    "Visualizations and Analyses:\n",
+-    "Time-Series Analysis:\n",
+-    "\n",
+-    "Plot sales trends over time for different drugs."
+-   ],
+-   "id": "d6e8b2cf7c4d3862"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "code",
+-   "outputs": [],
+-   "execution_count": null,
+-   "source": [
+-    "import matplotlib.pyplot as plt\n",
+-    "\n",
+-    "for drug in data['Drug Name'].unique():\n",
+-    "    drug_data = data[data['Drug Name'] == drug]\n",
+-    "    plt.plot(drug_data['Date'], drug_data['Sales'], label=drug)\n",
+-    "\n",
+-    "plt.xlabel('Date')\n",
+-    "plt.ylabel('Sales')\n",
+-    "plt.title('Sales Trends Over Time')\n",
+-    "plt.legend()\n",
+-    "plt.show()\n"
+-   ],
+-   "id": "26b9589bbbc24792"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "markdown",
+-   "source": [
+-    "Correlation Analysis:\n",
+-    "\n",
+-    "Use a heatmap to explore correlations between numerical features."
+-   ],
+-   "id": "a81e9e1ea58ddc91"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "code",
+-   "outputs": [],
+-   "execution_count": null,
+-   "source": [
+-    "import seaborn as sns\n",
+-    "\n",
+-    "numeric_data = data.select_dtypes(include=['float64', 'int64'])\n",
+-    "correlation_matrix = numeric_data.corr()\n",
+-    "\n",
+-    "plt.figure(figsize=(10, 6))\n",
+-    "sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')\n",
+-    "plt.title('Correlation Heatmap')\n",
+-    "plt.show()\n"
+-   ],
+-   "id": "67a69ab221cbcd20"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "markdown",
+-   "source": [
+-    "Seasonality Check:\n",
+-    "\n",
+-    "Check if there are seasonal patterns in sales."
+-   ],
+-   "id": "31f596b49b7629c6"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "code",
+-   "outputs": [],
+-   "execution_count": null,
+-   "source": [
+-    "data['Month'] = pd.to_datetime(data['Date']).dt.month\n",
+-    "monthly_sales = data.groupby('Month')['Sales'].sum()\n",
+-    "\n",
+-    "plt.plot(monthly_sales.index, monthly_sales.values, marker='o')\n",
+-    "plt.title('Monthly Sales Pattern')\n",
+-    "plt.xlabel('Month')\n",
+-    "plt.ylabel('Total Sales')\n",
+-    "plt.xticks(range(1, 13))\n",
+-    "plt.show()\n"
+-   ],
+-   "id": "253d157a9f049f12"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "markdown",
+-   "source": [
+-    "Boxplots for Distribution:\n",
+-    "\n",
+-    "Understand the distribution of sales, prices, etc., across different categories."
+-   ],
+-   "id": "c5e2f331cc6ec861"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "code",
+-   "outputs": [],
+-   "execution_count": null,
+-   "source": [
+-    "sns.boxplot(x='Drug Name', y='Sales', data=data)\n",
+-    "plt.xticks(rotation=45)\n",
+-    "plt.title('Sales Distribution Across Drugs')\n",
+-    "plt.show()\n"
+-   ],
+-   "id": "3e70cd1980a7a09f"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "markdown",
+-   "source": [
+-    "Feature Relationships:\n",
+-    "\n",
+-    "Analyze relationships like sales vs. retail price or sales vs. buffer stock."
+-   ],
+-   "id": "d51057fd79556804"
+-  },
+-  {
+-   "metadata": {},
+-   "cell_type": "code",
+-   "outputs": [],
+-   "execution_count": null,
+-   "source": [
+-    "sns.scatterplot(x='Retail Price', y='Sales', hue='Drug Name', data=data)\n",
+-    "plt.title('Sales vs. Retail Price')\n",
+-    "plt.show()\n"
+-   ],
+-   "id": "b946d6ba9d8b883f"
+-  }
+- ],
+- "metadata": {
+-  "kernelspec": {
+-   "display_name": "Python 3",
+-   "language": "python",
+-   "name": "python3"
+-  },
+-  "language_info": {
+-   "codemirror_mode": {
+-    "name": "ipython",
+-    "version": 2
+-   },
+-   "file_extension": ".py",
+-   "mimetype": "text/x-python",
+-   "name": "python",
+-   "nbconvert_exporter": "python",
+-   "pygments_lexer": "ipython2",
+-   "version": "2.7.6"
+-  }
+- },
+- "nbformat": 4,
+- "nbformat_minor": 5
+-}
++#%%
++import pandas as pd
++data = pd.read_excel('C:/Users/ASUS/OneDrive/Desktop/Drug_Data_With_Stock.xlsx')
++
++#%%
++print(data.info())
++print(data.describe())
++print(data.head())
++
++#%% md
++Visualizations and Analyses:
++Time-Series Analysis:
++
++Plot sales trends over time for different drugs.
++#%%
++import matplotlib.pyplot as plt
++
++for drug in data['Drug Name'].unique():
++    drug_data = data[data['Drug Name'] == drug]
++    plt.plot(drug_data['Date'], drug_data['Sales'], label=drug)
++
++plt.xlabel('Date')
++plt.ylabel('Sales')
++plt.title('Sales Trends Over Time')
++plt.legend()
++plt.show()
++
++#%% md
++Correlation Analysis:
++
++Use a heatmap to explore correlations between numerical features.
++#%%
++import seaborn as sns
++
++numeric_data = data.select_dtypes(include=['float64', 'int64'])
++correlation_matrix = numeric_data.corr()
++
++plt.figure(figsize=(10, 6))
++sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
++plt.title('Correlation Heatmap')
++plt.show()
++
++#%% md
++Seasonality Check:
++
++Check if there are seasonal patterns in sales.
++#%%
++# data['Month'] = pd.to_datetime(data['Date']).dt.month
++# monthly_sales = data.groupby('Month')['Sales'].sum()
++#
++# plt.plot(monthly_sales.index, monthly_sales.values, marker='o')
++# plt.title('Monthly Sales Pattern')
++# plt.xlabel('Month')
++# plt.ylabel('Total Sales')
++# plt.xticks(range(1, 13))
++# plt.show()
++
++#%% md
++Boxplots for Distribution:
++
++Understand the distribution of sales, prices, etc., across different categories.
++#%%
++sns.boxplot(x='Drug Name', y='Sales', data=data)
++plt.xticks(rotation=45)
++plt.title('Sales Distribution Across Drugs')
++plt.show()
++
++#%% md
++Feature Relationships:
++
++Analyze relationships like sales vs. retail price or sales vs. buffer stock.
++#%%
++sns.scatterplot(x='Retail Price', y='Sales', hue='Drug Name', data=data)
++plt.title('Sales vs. Retail Price')
++plt.show()
