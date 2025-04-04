@@ -104,11 +104,6 @@ def process_drug_data(drug_name, folder_path):
     # Calculate profit margin (Retail Price - Purchase Price)
     combined_data['Profit Margin'] = combined_data['Retail Price'] - combined_data['Purchase Price']
 
-    # Perform exploratory data analysis (EDA)
-    print(f"EDA for {drug_name} data:")
-    print(combined_data.describe(include='all'))  # Summary statistics
-    print(combined_data.isnull().sum())  # Count of missing values
-
     # Save cleaned data to an Excel file
     output_path = f'C:/Users/ASUS/OneDrive/Desktop/{drug_name}_Cleaned.xlsx'
     combined_data.to_excel(output_path, index=False, sheet_name=f'{drug_name}')

@@ -41,8 +41,6 @@ def feature_engineering(df):
     # Step 5: Compute Mean Sales
     df['Mean Sale'] = df.groupby(['Drug Name'])['Sales'].transform('mean')
 
-    # # Step 6: Compute Coefficient of Variation (CV) for Sales Variability
-    # df['CV'] = df.groupby(['Drug Name'])['Sales'].transform(lambda x: (x.std() / x.mean()) * 100)
 
     # Step 7: Handle Missing Values Using Forward and Backward Fill
     df.fillna(method='ffill', inplace=True)

@@ -1,11 +1,10 @@
 import pandas as pd
-import os
 
 # Define the output file path
 output_combined_path = r'C:/Users/ASUS/OneDrive/Desktop/Combined_Drug_Data.xlsx'
 
 # Function to add additional columns
-def add_additional_columns(df, drug_name, disease_category):
+def add_additional_columns(df, disease_category):
     df['Drug Name'] = df['Drug Name'].str.strip()
     df['Disease Category'] = disease_category
 
@@ -40,9 +39,3 @@ def combine_all_drug_data():
 # Run the function to combine data
 combine_all_drug_data()
 
-# Perform basic EDA on the combined data
-combined_data = pd.read_excel(output_combined_path, sheet_name='Combined Data')
-print("EDA for Combined Drug Data:")
-
-print(combined_data.describe(include='all'))
-print(combined_data.isnull().sum())

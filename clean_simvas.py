@@ -22,8 +22,6 @@ def process_simvastatin_data():
     global combined_data
 
     for file in os.listdir(folder_path):
-        if file.startswith('~$') or not file.endswith('.xlsx'):  # Skip temporary or non-Excel files
-            continue
 
         file_path = os.path.join(folder_path, file)
         print(f"Processing file: {file_path}")
@@ -101,11 +99,7 @@ def process_simvastatin_data():
     combined_data.to_excel(output_path, index=False, sheet_name='Simvastatin')
     print(f"Cleaned data saved to {output_path}")
 
-# Run the cleaning and EDA process
+# Run the cleaning
 if __name__ == "__main__":
     process_simvastatin_data()
 
-    # Perform basic Exploratory Data Analysis (EDA)
-    print("EDA for Simvastatin data:")
-    print(combined_data.describe(include='all'))  # Display statistical summary
-    print(combined_data.isnull().sum())  # Display missing value count
